@@ -17,15 +17,19 @@ h1 {
   background-size: contain;
   background-position: 50% 50%;
 }
+h1 > a {
+  display: block;
+  width: 100%; height: 100%;
+}
 #navBox {
   position: fixed; top: 0; left: 110px;
-  width: 200px; height: 530px;
+  width: 200px; height: 520px;
   background-color: rgba(0,0,0,0.8);
 }
 .unb {
   width: 116px; height: 102px;
   margin-top: 78px; margin-left: 20px;
-  font-size: 15px;
+  font-size: 15px; font-weight: 100;
   color: #fff;
 }
 .unb > ul {
@@ -39,7 +43,7 @@ h1 {
 .unb li > a {
   width: 100%; height: 100%;
 }
-.unb li:hover a { background-color: #ddd; }
+.unb li:hover a { background-color: rgba(0,0,0,0.5); }
 
 .gnb {
   width: 94px; height: 272px;
@@ -58,12 +62,12 @@ h1 {
 .gnb li > a {
   width: 100%; height: 100%;
 }
-.gnb li:hover a { background-color: #ddd; }
+.gnb li:hover a { background-color: rgba(0,0,0,0.5); }
 
 /* #slideBox ======================================================= */
 #slideBox {
   position: relative;
-  width: 1920px; height: 1080px;
+  width: 100%; height: 920px;
 }
 .banner_contents {
   position: absolute; top: 0; bottom: 0; left: 0; right: 0;
@@ -100,22 +104,62 @@ h1 {
 .contents_btn > a:hover { background-color: #ddd; }
 
 .slide_set {
-  /* position: relative; */
   width: 100%; height: 100%;
 }
 
 .slide_btn_area {
   position: absolute;
   top: 0; bottom: 0; left: 0; right: 0;
-  width: 90%; height: 0;
+  width: 95%; height: 0;
   margin: auto;
 }
 .slide_btn_area button {
-  width: 50px; height: 50px;
+  width: 60px; height: 60px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
 }
+.next_btn {
+  float: right;
+  background-image: url('../../img/mainbox/right_arrow.png');
+}
+.prev_btn {
+  float: left;
+  background-image: url('../../img/mainbox/left_arrow.png');
+}
+.slide_btn_area button:hover { background-color: rgba(255,255,255,0.5); }
 
+.slide_indicator {
+  position: absolute; bottom: 65px; left: 0; right: 0;
+  width: 135px; height: 10px;
+  margin: auto;
+}
+.slide_indicator > ul {
+  width: 100%; height: 100%;
+}
+.slide_indicator li {
+  float: left;
+  width: 10px; height: 10px;
+  margin-right: 20px;
+  border-radius: 20px;
+  background-color: #c4c4c4;
+}
+.slide_indicator li > a {
+  display: block;
+  width: 100%; height: 100%;
+  border-radius: 20px;
+}
+.slide_indicator li:hover > a { background-color: #555; }
+.slide_indicator li:last-child { margin-right: 0; }
+.slide_indicator li.on {
+  width: 15px;
+  border-radius: 5px;
+  background-color: #555;
+}
 .slide {
   width: 100%; height: 100%;
+  overflow: hidden;
 }
 .slide_wrapper {
   width: 500%; height: 100%;
@@ -132,3 +176,249 @@ h1 {
 .main_image_03 { background-image: url('../../img/mainbox/main_image_03.jpg'); }
 .main_image_04 { background-image: url('../../img/mainbox/main_image_04.jpg'); }
 .main_image_05 { background-image: url('../../img/mainbox/main_image_05.jpg'); }
+
+/* newBox =========================================================================== */
+#newBox {
+  position: relative;
+  width: 100%; height: 920px;
+}
+#newBox h3 {
+  position: absolute; top: 134px; left: 0; right: 0;
+  width: 600px; height: 54px;
+  margin: auto;
+  font-size: 36px; font-weight: 300;
+  text-transform: uppercase;
+  color: #333;
+}
+.garden_collection_area {
+  position: absolute; top: 238px; left: 0; right: 0;
+  width: 1020px; height: 574px;
+  margin: auto;
+}
+.sunglasses_area {
+  float: left;
+  width: 460px; height: 100%;
+}
+.sunglasses_img {
+  width: 460px; height: 490px;
+  background-image: url('../../img/section_01/section1_sunglasses.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.sunglasses_btn {
+  width: 300px; height: 52px;
+  margin: auto; margin-top: 31px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 52px;
+  background-color: #eee;
+}
+.sunglasses_btn > a {
+  display: block;
+  width: 100%; height: 100%;
+}
+.sunglasses_btn > a:hover { background-color: #ddd; }
+
+.glasses_area {
+  float: right;
+  width: 460px; height: 100%;
+}
+.glasses_img {
+  width: 460px; height: 490px;
+  background-image: url('../../img/section_01/section1_glasses.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.glasses_btn {
+  width: 300px; height: 52px;
+  margin: auto; margin-top: 31px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 52px;
+  background-color: #eee;
+}
+.glasses_btn > a {
+  display: block;
+  width: 100%; height: 100%;
+}
+.glasses_btn > a:hover { background-color: #ddd; }
+
+/* subBox ===================================================================== */
+#subBox {
+  position: relative;
+  width: 100%; height: 920px;
+}
+.subbox_contents_wrapper {
+  position: absolute; top: 424px; right: 156px;
+  width: 300px; height: 36px;
+}
+.subbox_contents_wrapper> h3 {
+  float: left;
+  width: 220px; height: 36px;
+  font-size: 24px; font-weight: 300;
+}
+.sub_slide_btn {
+  float: right;
+  width: 60px; height: 22px;
+  padding-top: 3px;
+}
+.sub_slide_btn > button {
+  width: 20px; height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50% 50%;
+}
+.sub_slide_btn > button:hover { background-color: #ddd; }
+.next_sub_btn {
+  float: right;
+  background-image: url('../../img/section_02/sub_right_arrow.png');
+}
+.prev_sub_btn {
+  float: left;
+  background-image: url('../../img/section_02/sub_left_arrow.png');
+}
+.sunglasses_collection_img {
+  position: absolute; top: 87px; left: 380px;
+  width: 1116px; height: 320px;
+  background-image: url('../../img/section_02/section2_main_img.png');
+}
+.sub_slide {
+  position: absolute; bottom: 42px; left: 380px;
+  width: 1383px; height: 410px;
+  overflow: hidden;
+}
+.sub_slide_wrapper {
+  width: 3490px; height: 100%;
+}
+.product_img {
+  float: left;
+  width: 330px; height: 410px;
+  margin-right: 21px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.sub_slide_wrapper > div:nth-of-type(1) { background-image: url('../../img/section_02/section2_01.png'); }
+.sub_slide_wrapper > div:nth-of-type(2) { background-image: url('../../img/section_02/section2_02.png'); }
+.sub_slide_wrapper > div:nth-of-type(3) { background-image: url('../../img/section_02/section2_03.png'); }
+.sub_slide_wrapper > div:nth-of-type(4) { background-image: url('../../img/section_02/section2_04.png'); }
+.sub_slide_wrapper > div:nth-of-type(5) { background-image: url('../../img/section_02/section2_05.png'); }
+.sub_slide_wrapper > div:nth-of-type(6) { background-image: url('../../img/section_02/section2_06.png'); }
+.sub_slide_wrapper > div:nth-of-type(7) { background-image: url('../../img/section_02/section2_07.png'); }
+.sub_slide_wrapper > div:nth-of-type(8) { background-image: url('../../img/section_02/section2_08.png'); }
+.sub_slide_wrapper > div:nth-of-type(9) { background-image: url('../../img/section_02/section2_09.png'); }
+.sub_slide_wrapper > div:nth-of-type(10) {
+  margin-right: 0;
+  background-image: url('../../img/section_02/section2_10.png');
+}
+
+/* giftBox ================================================================================================ */
+#giftBox {
+  position: relative;
+  width: 100%; height: 920px;
+}
+#giftBox > h3 {
+  position: absolute; bottom: 80px; right: 210px;
+  width: 210px; height: 168px;
+  text-transform: uppercase;
+  font-size: 36px; font-weight: 300;
+  line-height: 54px;
+}
+.gift_box_img {
+  width: 1020px; height: 760px;
+  margin: auto; padding-top: 80px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.woman_img {
+  float: left;
+  width: 500px; height: 474px;
+  background-image: url('../../img/section_03/woman.png');
+}
+.woman_eyewear_img {
+  float: right;
+  width: 500px; height: 268px;
+  background-image: url('../../img/section_03/woman_glasses.png');
+  background-position: 50% 80%;
+}
+.man_img {
+  float: right;
+  width: 500px; height: 474px;
+  margin-top: 18px;
+  background-image: url('../../img/section_03/man.png');
+}
+.man_eyewear_img{
+  width: 500px; height: 268px;
+  margin-top: 492px;
+  background-image: url('../../img/section_03/man_glasses.png');
+  background-position: 50% 80%;
+}
+
+/* footBox ================================================================================================ */
+#footBox {
+  width: 100%; height: 400px;
+  background-color: #f7f7f7;
+}
+.footer_wrapper {
+  width: 1660px; height: 344px;
+  margin: auto; padding-top: 51px;
+}
+.footer_wrapper > h2 {
+  float: right;
+  width: 220px; height: 21px;
+  background-image: url('../../img/footbox/footer_logo.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.fnb {
+  float: left;
+  width: 548px; height: 232px;
+  font-size: 14px;
+}
+.fnb > dl {
+  float: left;
+  margin-right: 146px;
+}
+.fnb > dl:last-of-type { margin-right: 0; }
+
+.fnb dt {
+  width: auto; height: auto;
+  margin-bottom: 25px;
+  font-weight: 300;
+}
+.fnb dd {
+  width: auto; height: auto;
+  margin-bottom: 10px;
+  font-size: 12px; font-weight: 300;
+}
+.fnb dd > a {
+  display: block;
+  width: 100%; height: 100%;
+}
+.fnb dd > a:hover { background-color: #ddd; }
+
+.company_info {
+  width: 100%; height: 22px;
+  margin-top: 300px;
+}
+.company_info > p {
+  float: left;
+  width: 174px; height: 100%;
+  font-size: 14px; font-weight: 700;
+}
+.company_info > ul {
+  float: right;
+  width: 1356px; height: 100%;
+  font-size: 12px; font-weight: 300;
+}
+.company_info li {
+  float: left;
+  width: auto; height: auto;
+  padding: 0 4px;
+  border-right: 1px solid #333;
+}
+.company_info li:last-child { border-right: 0; padding-right: 0; }
