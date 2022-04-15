@@ -8,7 +8,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;300;400;700&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="../css/common/reset.css">
   <link rel="stylesheet" href="../css/common/common.css">
@@ -24,7 +24,7 @@
     <!-- #headBox ====================================================================================== -->
     <header id="headBox">
       <div class="headbox_wrapper">
-        <h1><span class="blind">gentle monster logo image</span></h1>
+        <h1><a href="../index.html"><span class="blind">gentle monster logo image</span></a></h1>
 
         <nav id="navBox">
           <h2 class="blind">page navigation</h2>
@@ -79,7 +79,7 @@
 
         <div class="slide_indicator">
           <ul>
-            <li><a href="#slide_01">
+            <li class="on"><a href="#slide_01">
               <span class="blind">슬라이드 광고 배너 사진 01</span>
             </a></li>
             <li><a href="#slide_02">
@@ -141,14 +141,15 @@
 
     <!-- #subBox ====================================================================================== -->
     <section id="subBox">
-      <h3>2022 선글라스 컬렉션</h3>
-      <div class="sunglasses_collection_img"><span class="blind">2022 선글라스 컬렉션 이미지</span></div>
-      <div class="sub_slide_set">
+      <div class="subbox_contents_wrapper">
+        <h3>2022 선글라스 컬렉션</h3>
         <div class="sub_slide_btn">
           <button type="button" class="next_sub_btn"><span class="blind">next</span></button>
           <button type="button" class="prev_sub_btn"><span class="blind">prev</span></button>
         </div> <!-- //.sub_slide_btn -->
-
+      </div>
+      <div class="sub_slide_set">
+        <div class="sunglasses_collection_img"><span class="blind">2022 선글라스 컬렉션 이미지</span></div>
         <div class="sub_slide">
           <div class="sub_slide_wrapper">
             <div class="product_img"><span class="blind">2022 선글라스 컬렉션 제품 01</span></div>
@@ -179,51 +180,53 @@
 
     <!-- #footBox ================================================================================== -->
     <footer id="footBox">
-      <h2 class="sub_logo"><span class="blind">gentle monster footer sub logo</span></h2>
-      <div class="fnb">
-        <dl>
-          <dt>고객 서비스</dt>
-          <dd><a href="#">문의</a></dd>
-          <dd><a href="#">배송</a></dd>
-          <dd><a href="#">교환 및 반품</a></dd>
-          <dd><a href="#">주문조회</a></dd>
-          <dd><a href="#">수리서비스 가이드</a></dd>
-          <dd><a href="#">제품 사용 가이드</a></dd>
-          <dd><a href="#">제품 등록</a></dd>
-        </dl>
-        <dl>
-          <dt>법적 고지</dt>
-          <dd><a href="#">이용약관</a></dd>
-          <dd><a href="#">개인정보처리방침</a></dd>
-          <dd><a href="#">쿠키 정책</a></dd>
-          <dd><a href="#">기프트카드 이용약관</a></dd>
-        </dl>
-        <dl>
-          <dt>소셜 미디어</dt>
-          <dd><a href="">페이스북</a></dd>
-          <dd><a href="">인스타그램</a></dd>
-          <dd><a href="">유튜브</a></dd>
-          <dd><a href="">트위터</a></dd>
-          <dd><a href="">카카오톡</a></dd>
-          <dd><a href="">핀터레스트</a></dd>
-          <dd><a href="">위쳇</a></dd>
-          <dd><a href="">웨이보</a></dd>
-        </dl>
-      </div> <!-- //.fnb -->
+      <div class="footer_wrapper">
+        <h2 class="sub_logo"><span class="blind">gentle monster footer sub logo</span></h2>
+        <div class="fnb">
+          <dl>
+            <dt>고객 서비스</dt>
+            <dd><a href="#">문의</a></dd>
+            <dd><a href="#">배송</a></dd>
+            <dd><a href="#">교환 및 반품</a></dd>
+            <dd><a href="#">주문조회</a></dd>
+            <dd><a href="#">수리서비스 가이드</a></dd>
+            <dd><a href="#">제품 사용 가이드</a></dd>
+            <dd><a href="#">제품 등록</a></dd>
+          </dl>
+          <dl>
+            <dt>법적 고지</dt>
+            <dd><a href="#">이용약관</a></dd>
+            <dd><a href="#">개인정보처리방침</a></dd>
+            <dd><a href="#">쿠키 정책</a></dd>
+            <dd><a href="#">기프트카드 이용약관</a></dd>
+          </dl>
+          <dl>
+            <dt>소셜 미디어</dt>
+            <dd><a href="https://www.facebook.com/gentlemonsterofficial">페이스북</a></dd>
+            <dd><a href="https://www.instagram.com/gentlemonster/">인스타그램</a></dd>
+            <dd><a href="https://www.youtube.com/c/gentlemonsterofficial">유튜브</a></dd>
+            <dd><a href="https://twitter.com/_gentlemonster_">트위터</a></dd>
+            <dd><a href="https://pf.kakao.com/_Vgxnhu">카카오톡</a></dd>
+            <dd><a href="https://www.pinterest.co.kr/gentle_monster/_created/">핀터레스트</a></dd>
+            <dd><a href="https://www.gentlemonster.com/img/common/wechat_qr.jpg">위쳇</a></dd>
+            <dd><a href="https://weibo.com/gentlemonsteraccount">웨이보</a></dd>
+          </dl>
+        </div> <!-- //.fnb -->
 
-      <div class="company_info">
-        <p>© 2022 GENTLE MONSTER</p>
-        <ul>
-          <li>주) 아이아이컴바인드</li>
-          <li>대표자명: 김한국</li>
-          <li>사업자번호: 119-86-38589</li>
-          <li>통신판매신고번호: 제 2014-서울마포-1050 호 (사업자 정보 확인)</li>
-          <li>이메일 문의: cs@gentlemonster.com</li>
-          <li>개인정보보호책임자: 박세진</li>
-          <li><address>주소: 서울특별시 마포구 어울마당로5길 41</address></li>
-          <li>대표번호: 1600-2126</li>
-        </ul>
-      </div> <!-- //.company_info -->
+        <div class="company_info">
+          <p>© 2022 GENTLE MONSTER</p>
+          <ul>
+            <li>주) 아이아이컴바인드</li>
+            <li>대표자명: 김한국</li>
+            <li>사업자번호: 119-86-38589</li>
+            <li>통신판매신고번호: 제 2014-서울마포-1050 호 (사업자 정보 확인)</li>
+            <li>이메일 문의: cs@gentlemonster.com</li>
+            <li>개인정보보호책임자: 박세진</li>
+            <li><address>주소: 서울특별시 마포구 어울마당로5길 41</address></li>
+            <li>대표번호: 1600-2126</li>
+          </ul>
+        </div> <!-- //.company_info -->
+      </div>
     </footer>
 
   </div> <!-- //#wrap -->
